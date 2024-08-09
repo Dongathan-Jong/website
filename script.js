@@ -7,12 +7,14 @@ document.addEventListener("scroll", function() {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
   const viewportHeight = window.innerHeight;
 
-  if (scrollTop + viewportHeight >= 3200) {
+  if (scrollTop + viewportHeight >= 1800) {
     document.body.classList.add('faded-background'); 
     portfolio.style.display = 'block'; 
+    socials.style.display = 'block';
   } else {
     document.body.classList.remove('faded-background'); 
     portfolio.style.display = 'none'; 
+    socials.style.display = 'none';
   }
 
   scrollTexts.forEach(text => {
