@@ -1,3 +1,3 @@
 document.getElementById("homeButton").addEventListener("click", function() {
-    window.location.href = "/"; 
+  window.history.back(); 
 });
