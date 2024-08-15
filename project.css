@@ -1,0 +1,63 @@
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+    font-family: Courier;
+    margin: 0;
+    padding: 20px;
+    animation: backgroundFade 2s ease-in-out forwards;
+    color: #3e6175;
+}
+
+.project p1{
+    color: #3e6175;
+}
+
+.project {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    animation: textFade 2s ease-in-out forwards;
+    color: #3e6175;
+}
+
+.project h2 {
+    margin-top: 0;
+    animation: textFade 2s ease-in-out forwards;
+    color: #3e6175;
+}
+
+.project p {
+    margin-bottom: 10px;
+    animation: textFade 2s ease-in-out forwards;
+    color: #3e6175;
+}
+
+.project a {
+    color: #3e6175;
+    animation: textFade 2s ease-in-out forwards;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-color: #3e6175; 
+    }
+    100% {
+        background-color: #181818; 
+    }
+}
+
+@keyframes textFade {
+    0% {
+        color: #3e6175; 
+    }
+    100% {
+        color: #ffffff; 
+    }
+}
