@@ -21,11 +21,16 @@ body {
     animation: textFade 2s ease-in-out forwards;
     color: #3e6175;
     margin-left: 50px;
+    text-align: center;
+}
+
+.project img{
+    animation: iconFade 2s ease-in-out forwards;
 }
 
 .project h2 {
     margin-top: 0;
-    animation: textFade 2s ease-in-out forwards;
+    animation: headerFade 2s ease-in-out forwards;
     color: #3e6175;
 }
 
@@ -72,8 +77,18 @@ body {
     }
 }
 
+@keyframes headerFade {
+    0% {
+        color: #3e6175; 
+    }
+    100% {
+        color: #6db6e3; 
+    }
+}
+
+
 #homeButton {
-    padding: 20px 10px;
+    
     font-size: 18px;
     color: #fff;
     background-color: rgba(0,0,0,0);
@@ -88,7 +103,7 @@ body {
 }
 
 #homeButton:hover {
-    background-color: #3e6175;
+    background-color: rgba(0,0,0,0);
 }
 
 .home-icon {
@@ -101,7 +116,6 @@ body {
 .header-container {
     display: flex;
     align-items: left;
-    padding: 20px;
     background-color: rgba(0,0,0,0);
     color: #3e6175;
 }
