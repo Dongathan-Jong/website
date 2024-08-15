@@ -20,6 +20,7 @@ body {
     border-radius: 5px;
     animation: textFade 2s ease-in-out forwards;
     color: #3e6175;
+    margin-left: 50px;
 }
 
 .project h2 {
@@ -60,4 +61,47 @@ body {
     100% {
         color: #ffffff; 
     }
+}
+
+@keyframes iconFade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%; 
+    }
+}
+
+#homeButton {
+    padding: 20px 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    animation: iconFade 2s ease-in-out forwards;
+}
+
+#homeButton:hover {
+    background-color: #3e6175;
+}
+
+.home-icon {
+    width: 24px;
+    height: 24px;
+    fill: #fff; 
+}
+
+
+.header-container {
+    display: flex;
+    align-items: left;
+    padding: 20px;
+    background-color: rgba(0,0,0,0);
+    color: #3e6175;
 }
