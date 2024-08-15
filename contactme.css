@@ -1,0 +1,42 @@
+
+
+body {
+  background-color: #191919;
+  font-family: monospace;
+  margin: 0;
+  color: #ffffff;
+  animation: backgroundFade 2s ease-in-out forwards;
+}
+
+p{
+  font-family: monospace;
+  text-align: center;
+  color: #ffffff;
+  animation: textFade 2s ease-in-out forwards;
+}
+
+a {
+  color: #bfbfbf;
+  text-align: center;
+  animation: textFade 2s ease-in-out forwards;
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-color: #3e6175; 
+    }
+    100% {
+        background-color: #181818; 
+    }
+}
+
+@keyframes textFade {
+    0% {
+        color: #3e6175;
+    }
+    100% {
+        color: #ffffff; 
+    }
+}
+
+
