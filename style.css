@@ -21,6 +21,7 @@ body {
 
 .heads p{
   padding-bottom: 800px;
+  animation: textFade 2s ease-in-out forwards;
 }
 
 .scroll-container {
@@ -53,6 +54,7 @@ body {
  
   color: #ffffff; 
   padding-bottom: 100px;
+  margin-bottom: 100px;
   text-align: left;
   
 }
@@ -70,7 +72,9 @@ body {
 
 button {
     padding:  10px;
-    font-size: 18px;
+    margin-top: 300px;
+    margin-bottom:200px;
+    font-size: 15px;
     font-family: Courier;
     color: #fff;
     background-color: rgba(255,255,255,0);
@@ -87,4 +91,13 @@ button {
     transform: translate(-50%);
 }
 
+
+@keyframes textFade {
+    0% {
+        color: #191919; 
+    }
+    100% {
+        color: #ffffff; 
+    }
+}
 
