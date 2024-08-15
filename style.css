@@ -12,10 +12,17 @@ body {
   background-color: rgb(25, 25, 25);
   overflow-y: auto;
   transition: background-color 1s ease;
+  text-align: center;
 }
+
 ::-webkit-scrollbar{
   display: none;
 }
+
+.heads p{
+  padding-bottom: 800px;
+}
+
 .scroll-container {
   max-width: 800px;
   margin: 0 auto;
@@ -35,10 +42,7 @@ body {
   transition: opacity 1s ease-out, transform 1s ease-out;
   margin-bottom: 400px;
 }
-.p2{
-  padding-bottom: 600px;
-  text-align: center;
-}
+
 .scroll-text.visible {
   opacity: 1;
   transform: translateY(0);
