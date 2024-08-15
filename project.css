@@ -20,12 +20,13 @@ body {
     border-radius: 5px;
     animation: textFade 2s ease-in-out forwards;
     color: #3e6175;
-    margin-left: 50px;
     text-align: center;
 }
 
 .project img{
     animation: iconFade 2s ease-in-out forwards;
+    max-width: 50%;
+    height: auto;
 }
 
 .project h2 {
