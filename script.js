@@ -1,3 +1,5 @@
+
+
 document.addEventListener("scroll", function() {
   const scrollTexts = document.querySelectorAll(".scroll-text");
   const portfolio = document.getElementById('portfolio');
@@ -27,3 +29,8 @@ document.addEventListener("scroll", function() {
     }
   });
 });
+
+document.getElementById("projectButton").addEventListener("click", function() {
+    window.location.href = "projects.html";
+});
+
