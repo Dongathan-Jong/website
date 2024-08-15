@@ -9,7 +9,7 @@ document.addEventListener("scroll", function() {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
   const viewportHeight = window.innerHeight;
 
-  if (scrollTop + viewportHeight >= 1800) {
+  if (scrollTop + viewportHeight >= 3400) {
     document.body.classList.add('faded-background'); 
     portfolio.style.display = 'block'; 
     socials.style.display = 'block';
@@ -34,3 +34,26 @@ document.getElementById("projectButton").addEventListener("click", function() {
     window.location.href = "projects.html";
 });
 
+(function() {
+    let devtools = {
+        open: false,
+        orientation: null
+    };
+
+    const threshold = 160;
+    const check = function() {
+        let widthThreshold = window.outerWidth - window.innerWidth > threshold;
+        let heightThreshold = window.outerHeight - window.innerHeight > threshold;
+
+        if (!(heightThreshold && widthThreshold) && ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold)) {
+            if (!devtools.open) {
+                window.location.href = "contactme.html"; 
+            }
+            devtools.open = true;
+        } else {
+            devtools.open = false;
+        }
+    };
+
+    setInterval(check, 500);
+})();
